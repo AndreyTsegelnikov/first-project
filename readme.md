@@ -12,9 +12,9 @@ HEAD -- это голова.
 ```mermaid
 %% описание схемы
 
-A[*untracked*\n(неотслеживаемый) -- git add --> B[*staged*\n(в списке на коммит)\n+tracked];
-B -- git commit --> C[*tracked*\n(отслеживаемый);
-С -- Изменения --> D[*modified*\n(изменённый)];
+A[*untracked* (неотслеживаемый) -- git add --> B[*staged* (в списке на коммит) +tracked];
+B -- git commit --> C[*tracked* (отслеживаемый);
+С -- Изменения --> D[*modified* (изменённый)];
 D -- git add -->B;
 B -- Изменения --> D;
 ```
