@@ -11,8 +11,11 @@ HEAD -- это голова.
 
 ```mermaid
  graph TD;
-    A-->B;
-    B-->C;
+   A[*untracked*\n(неотслеживаемый) -- git add --> B[*staged*\n(в списке на коммит)\n+tracked];
+   B -- git commit --> C[*tracked*\n(отслеживаемый);
+   С -- Изменения --> D[*modified*\n(изменённый)];
+   D -- git add -->B;
+   B -- Изменения --> D;
 ```
 
 <и тут пустая строка!> 
