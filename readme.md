@@ -10,7 +10,6 @@ HEAD -- это голова.
 <тут пустая строка!>
 
 ```mermaid
-stateDiagram-v2
 [*] --> Still
 Still --> [*]
 Still --> Moving
