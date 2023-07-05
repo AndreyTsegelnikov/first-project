@@ -14,8 +14,8 @@ HEAD -- это голова.
 A[untracked]--gitadd-->B[staged+tracked];
 B--gitcommit-->C[tracked];
 С--Изменения--> D[modified];
-D--gitadd-->B;
-B--Изменения-->D;
+%%D--gitadd-->B;
+%%B--Изменения-->D;
 ```
 
 <и тут пустая строка!> 
