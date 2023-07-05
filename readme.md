@@ -10,12 +10,11 @@ HEAD -- это голова.
 <тут пустая строка!>
 
 ```mermaid
-
-A[untracked]--gitadd-->B[staged+tracked];
+A[untracked]--gitadd-->B[stagedtracked];
 B-->C[tracked];
 С--> D[modified];
-%%D-->B;
-%%B-->D;
+D-->B;
+B-->D;
 ```
 
 <и тут пустая строка!> 
