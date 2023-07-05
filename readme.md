@@ -10,13 +10,12 @@ HEAD -- это голова.
 <тут пустая строка!>
 
 ```mermaid
-%% описание схемы
-
-A[*untracked*\n(неотслеживаемый) -- git add --> B[*staged*\n(в списке на коммит)\n+tracked];
-B -- git commit --> C[*tracked*\n(отслеживаемый);
-С -- Изменения --> D[*modified*\n(изменённый)];
-D -- git add -->B;
-B -- Изменения --> D;
+flowchart
+    A[untracked] -- git add --> B[staged\nв список на коммит\n+tracked];
+    B --> |git commit| C[tracked\nотслеживаемый];
+    C[tracked\nотслеживаемый] --> |Изменения| D[modified\nизменённый];
+    D --> |git add| B;
+    B --> |Изменения| D;
 ```
 <и тут пустая строка!> 
 
