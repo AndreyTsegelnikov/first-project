@@ -12,9 +12,9 @@ HEAD -- это голова.
 ```mermaid
 
 A[untracked]--git add-->B[staged +tracked];
-B--git commit-->C[tracked];
+B--gitcommit-->C[tracked];
 С--Изменения--> D[modified];
-D--git add-->B;
+D--gitadd-->B;
 B--Изменения-->D;
 ```
 
